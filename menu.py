@@ -4,26 +4,54 @@ import sys
 import time
 import pyfiglet
 from functionality.drkrmydnction import clear
+import getpass
 
 class colors:
     RAWR = '\033[91m'
     TAE = '\033[92m'
 
-print(colors.RAWR + "WAIT MO LANG YA, BILANG KA LIMA..")
-time.sleep(5)
+def login():
+    clear()
+    user = "DARKARMY!@#**"
+    passwd = "DARKARMY***#@"
+    username = input("root@user: ")
+    password = getpass.getpass(prompt='root@password: ')
+    if username != user or password != passwd:
+        print("")
+        print("NIGGUH MALI PASSWORD RAWR RAWR")
+        sys.exit(1)
+    elif username == user and password == passwd:
+        ascii_banner = pyfiglet.figlet_format('WELCOME')
+        print(ascii_banner)
+        time.sleep(0.3)
+
+login()
+
+clear()
+print(colors.RAWR + "WAIT MO LANG YA, BILANG KA TATLO..")
+time.sleep(3)
 clear()
 
 ascii_banner = pyfiglet.figlet_format("DARK-ARMY-DDOS-TOOLS")
 print(ascii_banner)
 
+time.sleep(2)
 print(colors.TAE + '[1]DDOSit')
+time.sleep(2)
 print(colors.RAWR + '[2]C2')
+time.sleep(2)
 print(colors.TAE + '[3]BYPASSES')
+time.sleep(2)
 print(colors.TAE + '[4]CRYPTOR')
+time.sleep(2)
 print(colors.RAWR + '[5]DDOSSAMP')
+time.sleep(2)
 print(colors.RAWR + '[6]403')
+time.sleep(2)
 print('[7]SQLMAP')
+time.sleep(2)
 print('[8]SETOOLKIT')
+time.sleep(2)
 
 user_input = int(input('PILI KA ISA YA: '))
 
@@ -52,23 +80,23 @@ if user_input == 1:
             print('RAWR error')
             quit()
 
-        if user_input == 1:
+        if user_input == 2:
             from DDOSit import *
             import subprocess
             
-            print('type [go build httpflood.go]')
+            print('type[1]')
 
             user_input = int(input('TYPE IT RIGT HERE: '))
 
-            try:
-                if user_input == 'go build httpflood.go':
+            
+            if user_input == 1:
                     cmd = './httpflood.go'
                     p=subprocess.Popen(cmd,shell=True)
                     NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
                     print(BOBO_ERROR_HAHAHAH_KAWAWA)
                     print(NAG_OUT_TANGINANG_YAN)
         
-            except:
+            else:
                 print('ayusing mo typings mo')
                 quit()
 
@@ -107,7 +135,7 @@ if user_input == 4:
     user_input = int(input('PILI KA PA DITO BAI: '))
 
     if user_input == 1:
-        from CRYPTOR.simulan import *
+        from CRYPTOR import *
         import subprocess
 
         cmd = 'python simulan.py'
