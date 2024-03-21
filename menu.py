@@ -115,7 +115,7 @@ if user_input == 2:
         import subprocess
 
         os.system("python POWPOW.py")
-        p=subprocess.Popen(cmd,shell=True)
+        p=subprocess.Popen(system,shell=True)
         NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
         print(BOBO_ERROR_HAHAHAH_KAWAWA)
         print(NAG_OUT_TANGINANG_YAN)
