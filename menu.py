@@ -247,7 +247,7 @@ if user_input == 6:
         from DDOSit import * 
         import subprocess
 
-        cmd = 'bash 403-bypass.sh'
+        cmd = 'bash 403bypass.sh'
         p=subprocess.Popen(cmd,shell=True)
         NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
         print(BOBO_ERROR_HAHAHAH_KAWAWA)
