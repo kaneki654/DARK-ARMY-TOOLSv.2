@@ -111,7 +111,7 @@ if user_input == 2:
     user_input = int(input('PILI KA BAI: '))
 
     if user_input == 1:
-        from C2.POWPOW import *
+        from C2 import *
         import subprocess
 
         cmd = 'python POWPOW.py'
@@ -328,7 +328,7 @@ if user_input == 8:
         from setoolkit import *
         import subprocess
 
-        cmd = 'setoolkit'
+        cmd = './setoolkit'
         p=subprocess.Popen(cmd,shell=True)
         NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
         print(BOBO_ERROR_HAHAHAH_KAWAWA)
