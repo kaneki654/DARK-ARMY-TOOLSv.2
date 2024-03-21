@@ -244,14 +244,12 @@ if user_input == 6:
     user_input = int(input('RAWR: '))
 
     if user_input == 1:
-        from DDOSit import * 
-        import subprocess
-
-        cmd = 'bash 403bypass.sh'
-        p=subprocess.Popen(cmd,shell=True)
-        NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
-        print(BOBO_ERROR_HAHAHAH_KAWAWA)
-        print(NAG_OUT_TANGINANG_YAN)
+        print('type cd DDOSit')
+        time.sleep(1)
+        print('type bash 403bypass.sh')
+        time.sleep(1)
+        print('pagtapos nun makikita mo na ung usagee kung pano gamitin')
+        user_input()
     
     else:
         print('BOOM error HAHHAHAHHA')
