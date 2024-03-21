@@ -84,21 +84,11 @@ if user_input == 1:
             from DDOSit import *
             import subprocess
             
-            print('type[1]')
-
-            user_input = int(input('TYPE IT RIGT HERE: '))
-
-            
-            if user_input == 1:
-                    cmd = './httpflood.go'
-                    p=subprocess.Popen(cmd,shell=True)
-                    NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
-                    print(BOBO_ERROR_HAHAHAH_KAWAWA)
-                    print(NAG_OUT_TANGINANG_YAN)
-        
-            else:
-                print('ayusing mo typings mo')
-                quit()
+            cmd = './httpflood.go'
+            p=subprocess.Popen(cmd,shell=True)
+            NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
+            print(BOBO_ERROR_HAHAHAH_KAWAWA)
+            print(NAG_OUT_TANGINANG_YAN)
 
 if user_input == 2:
     clear()
