@@ -58,7 +58,7 @@ time.sleep(1)
 user_input = int(input('PILI KA ISA YA: '))
 
 if user_input == 0:
-    from ownddos import GRAA
+    import GRAA
     import subprocess
 
     cmd = 'python GRAA.py'
