@@ -62,13 +62,24 @@ if user_input == 1:
         ascii_banner = pyfiglet.figlet_format('DDOSit')
         print(ascii_banner)
 
-        print('[1]GRAA')
-        print('[2]FLOOD')
+        print('[0]GRAA')
+        print('[1]FLOOD')
 
         user_input = int(input('PILI KPA ISA RAWR: '))
 
+
         if user_input == 1:
-            from DDOSit import GRAA
+            from DDOSit import *
+            import subprocess
+            
+            cmd = './httpflood.go'
+            p=subprocess.Popen(cmd,shell=True)
+            NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
+            print(BOBO_ERROR_HAHAHAH_KAWAWA)
+            print(NAG_OUT_TANGINANG_YAN)
+
+        if user_input == 0:
+            from ownddos import GRAA
             import subprocess
 
             cmd = 'python GRAA.py'
@@ -78,18 +89,8 @@ if user_input == 1:
             print(NAG_OUT_TANGINANG_YAN)
 
         else:
-            print('RAWR error')
-            user_input()
-
-        if user_input == 2:
-            from DDOSit import *
-            import subprocess
-            
-            cmd = './httpflood.go'
-            p=subprocess.Popen(cmd,shell=True)
-            NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
-            print(BOBO_ERROR_HAHAHAH_KAWAWA)
-            print(NAG_OUT_TANGINANG_YAN)
+            print('nag error.')
+            user_input()     
 
 if user_input == 2:
     clear()
