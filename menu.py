@@ -66,6 +66,7 @@ if user_input == 1:
         print('[2]FLOOD')
 
         user_input = int(input('PILI KPA ISA RAWR: '))
+
         if user_input == 1:
             from DDOSit import GRAA
             import subprocess
@@ -78,7 +79,7 @@ if user_input == 1:
 
         else:
             print('RAWR error')
-            quit()
+            user_input()
 
         if user_input == 2:
             from DDOSit import *
