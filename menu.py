@@ -286,44 +286,11 @@ if user_input == 7:
     quit()
 
 if user_input == 8:
-    clear()
-    
-    ascii_banner = pyfiglet.figlet_format('SETOOLKIT')
-    print(ascii_banner)
+    from zphisher import *
+    import subprocess
 
-    print('note: you need to install the setup')
-    time.sleep(5)
-
-    print('[1]SETUP')
-    print('[2]SETOOLKIT')
-
-    user_input = int(input('root@DARKARMY= '))
-
-    if user_input == 1:
-        from setoolkit import *
-        import subprocess
-
-        cmd = 'python setup.py'
-        p=subprocess.Popen(cmd,shell=True)
-        NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
-        print(BOBO_ERROR_HAHAHAH_KAWAWA)
-        print(NAG_OUT_TANGINANG_YAN)
-    
-    else:
-        print('BOOM error HAHHAHAHHA')
-        quit()
-
-    if user_input == 2:
-        from setoolkit import *
-        import subprocess
-
-        cmd = './setoolkit'
-        p=subprocess.Popen(cmd,shell=True)
-        NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
-        print(BOBO_ERROR_HAHAHAH_KAWAWA)
-        print(NAG_OUT_TANGINANG_YAN)
-    
-    else:
-        print('BOOM error HAHHAHAHHA')
-        quit()
-        
+    cmd = 'bash zphisher.sh'
+    p=subprocess.Popen(cmd,shell=True)
+    NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
+    print(BOBO_ERROR_HAHAHAH_KAWAWA)
+    print(NAG_OUT_TANGINANG_YAN)
