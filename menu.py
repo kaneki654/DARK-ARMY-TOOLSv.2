@@ -35,26 +35,37 @@ clear()
 ascii_banner = pyfiglet.figlet_format("DARK-ARMY-DDOS-TOOLS")
 print(ascii_banner)
 
-time.sleep(2)
+time.sleep(1)
+print(colors.RAWR + '[0]ourddos')
+time.sleep(1)
 print(colors.TAE + '[1]DDOSit')
-time.sleep(2)
+time.sleep(1)
 print(colors.RAWR + '[2]C2')
-time.sleep(2)
+time.sleep(1)
 print(colors.TAE + '[3]BYPASSES')
-time.sleep(2)
+time.sleep(1)
 print(colors.TAE + '[4]CRYPTOR')
-time.sleep(2)
+time.sleep(1)
 print(colors.RAWR + '[5]DDOSSAMP')
-time.sleep(2)
+time.sleep(1)
 print(colors.RAWR + '[6]403')
-time.sleep(2)
+time.sleep(1)
 print('[7]SQLMAP')
-time.sleep(2)
+time.sleep(1)
 print('[8]SETOOLKIT')
-time.sleep(2)
+time.sleep(1)
 
 user_input = int(input('PILI KA ISA YA: '))
 
+if user_input == 0:
+    from ownddos import GRAA
+    import subprocess
+
+    cmd = 'python GRAA.py'
+    p=subprocess.Popen(cmd,shell=True)
+    NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
+    print(BOBO_ERROR_HAHAHAH_KAWAWA)
+    print(NAG_OUT_TANGINANG_YAN)
 
 if user_input == 1:
         clear()
@@ -62,7 +73,6 @@ if user_input == 1:
         ascii_banner = pyfiglet.figlet_format('DDOSit')
         print(ascii_banner)
 
-        print('[0]GRAA')
         print('[1]FLOOD')
 
         user_input = int(input('PILI KPA ISA RAWR: '))
@@ -77,20 +87,6 @@ if user_input == 1:
             NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
             print(BOBO_ERROR_HAHAHAH_KAWAWA)
             print(NAG_OUT_TANGINANG_YAN)
-
-        if user_input == 0:
-            from ownddos import GRAA
-            import subprocess
-
-            cmd = 'python GRAA.py'
-            p=subprocess.Popen(cmd,shell=True)
-            NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
-            print(BOBO_ERROR_HAHAHAH_KAWAWA)
-            print(NAG_OUT_TANGINANG_YAN)
-
-        else:
-            print('nag error.')
-            user_input()     
 
 if user_input == 2:
     clear()
