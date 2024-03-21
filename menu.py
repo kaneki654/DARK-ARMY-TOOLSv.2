@@ -111,11 +111,12 @@ if user_input == 2:
     user_input = int(input('PILI KA BAI: '))
 
     if user_input == 1:
+        from C2 import POWPOW
         from C2 import *
         import subprocess
 
-        os.system("python POWPOW.py")
-        p=subprocess.Popen(system,shell=True)
+        cmd = 'python POWPOW.py'
+        p=subprocess.Popen(cmd,shell=True)
         NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
         print(BOBO_ERROR_HAHAHAH_KAWAWA)
         print(NAG_OUT_TANGINANG_YAN)
