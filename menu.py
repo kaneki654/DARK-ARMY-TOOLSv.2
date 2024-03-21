@@ -52,7 +52,7 @@ print(colors.RAWR + '[6]403')
 time.sleep(1)
 print('[7]SQLMAP')
 time.sleep(1)
-print('[8]SETOOLKIT')
+print('[8]ZPHISHER')
 time.sleep(1)
 
 user_input = int(input('PILI KA ISA YA: '))
