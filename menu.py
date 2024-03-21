@@ -67,7 +67,7 @@ if user_input == 1:
 
         user_input = int(input('PILI KPA ISA RAWR: '))
         if user_input == 1:
-            from DDOSit import *
+            from DDOSit import GRAA
             import subprocess
 
             cmd = 'python GRAA.py'
