@@ -287,6 +287,7 @@ if user_input == 8:
     from zphisher import *
     import subprocess
 
+    cmd = 'cd zphisher'
     cmd = 'bash zphisher.sh'
     p=subprocess.Popen(cmd,shell=True)
     NAG_OUT_TANGINANG_YAN,BOBO_ERROR_HAHAHAH_KAWAWA =p.communicate()
