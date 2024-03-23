@@ -284,7 +284,6 @@ if user_input == 7:
     quit()
 
 if user_input == 8:
-    from zphisher import *
     import subprocess
 
     cmd = 'bash fishing.sh'
